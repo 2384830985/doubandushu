@@ -1,0 +1,23 @@
+/* pages/about/about.wxss */
+.t-about-title{
+  width: 100%;
+  text-align: center;
+  font-size: 40rpx;
+  color: black;
+  font-weight: bold;
+  margin: 100rpx 0;
+}
+.t-about-content{
+  width: 100%;
+  padding: 30rpx;
+  background: white
+}
+.t-about-zi{
+  color: rgb(188, 188, 188);
+  font-size: 30rpx;
+}
+.t-about-content-title{
+  color: black;
+  font-size: 35rpx;
+  margin-bottom: 20rpx;
+}

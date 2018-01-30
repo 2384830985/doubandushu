@@ -1,0 +1,32 @@
+<!--pages/list/list.wxml-->
+  <scroll-view 
+  class='wrapper-scroll'
+  scroll-y="true"
+  bindscrolltoupper="upper"             
+  bindscrolltolower="lower" 
+  bindscroll="scroll"
+  scroll-top="{{scroll_top}}"
+  >
+<block wx:for="{{detail}}" wx:for-index="inx" wx:for-item="ite">
+  <navigator url='../detail/detail?id={{ite.id}}'>
+    <view class='wrapper-content t-list-flew'>
+      <view class='t-list-logo'>
+      <image src="{{ite.imgUrl}}" class="slide-image"/>
+      </view>
+      <view class='t-list-content'>
+        <view class='t-list-content-title'>{{ite.title}}</view>
+        <view class='t-list-content-str'>
+            <image src="{{ite.star}}" class="slide-image"/>
+        </view>
+        <view class='wrapper-content-str'>
+          <block wx:for="{{ite.tag}}" wx:for-index="index" wx:for-item="item">
+            <view  class='wrapper-content-label'>{{item}}</view>
+          </block>
+        </view>
+        <view class='t-list-content-author'>作者:{{ite.author}}</view>
+        <view class='t-list-content-author'>{{ite.content}}</view>
+      </view>
+    </view>
+  </navigator>
+</block>
+</scroll-view>

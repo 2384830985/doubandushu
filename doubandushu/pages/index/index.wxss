@@ -1,0 +1,79 @@
+@import "../component/items/itwms.wxss";
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.t-content-logo{
+  position: relative;
+  height: 420rpx;
+  background-color: #ffac2d
+}
+.slide-image{
+  width: 100%;
+  height: 100%
+}
+.t-po-button{
+  padding: 20rpx 30rpx;
+  position: absolute;
+  top: 235rpx;
+  width: 690rpx;
+  height: 80rpx;
+}
+.t-po-button-search{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%!important;
+}
+.t-po-button-search-left{
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+  width: 80%;
+  font-size: 30rpx;
+  height: 60rpx;
+  background-color: white;
+  border-radius: 10rpx 0 0 10rpx;
+  border: 3rpx solid salmon ;
+  border-right: none;
+}
+.t-po-button-search-right{
+  margin-top: 1rpx;
+  padding-top: 15rpx;
+  font-size: 30rpx;
+  height: 55rpx;
+  width: 20%;
+  text-align: center;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  border-radius: 0 10rpx 10rpx 0;
+  border: 2rpx solid black ;
+}
+.wrapper-content-Interest{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  overflow: hidden;
+  width: 100%;
+  font-size: 30rpx;
+}
+.wrapper-content-Interest-right{
+  float: right;
+  color: rgb(200, 200, 200);
+  margin-right: 30rpx;
+}

@@ -1,0 +1,17 @@
+/* pages/sort/sort.wxss */
+.t-sort-title{
+  font-size: 30rpx;
+  color: black;
+}
+.t-sort-content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%!important;
+}
+.t-sort-sor{
+  padding: 10rpx 20rpx;
+  margin: 15rpx 30rpx 15rpx 0;
+  font-size: 25rpx;
+  color: rgb(188, 188, 188);
+  background-color: rgb(240, 240, 240)
+}

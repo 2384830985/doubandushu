@@ -1,0 +1,6 @@
+<!--pages/about/about.wxml-->
+<view class='t-about-title'>读书小应用</view>
+<view class='t-about-content'>
+  <view class='t-about-content-title'>项目说明:</view>
+  <view class='t-about-zi'>本项目是一个练习的项目，包含内容，微信基础for循环以及传参，依赖注入，模块注入等等，一般小伙伴的联系时间3天左右基本就可以完成</view>
+</view>

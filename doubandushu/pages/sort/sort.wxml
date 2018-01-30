@@ -1,0 +1,13 @@
+<!--pages/sort/sort.wxml-->
+<view class='wrapper-content'>
+  <block wx:for="{{list}}" wx:key="list" wx:for-index='idx' wx:for-item='items'>
+    <view class='t-sort-title'>{{items.title}}</view>
+    <view class='t-sort-content'>
+      <block wx:for="{{items.tags}}" wx:key="items" wx:for-index='index' wx:for-item='item'>
+        <navigator url='../list/list?key={{item}}'>
+          <view class='t-sort-sor'>{{item}}</view>
+        </navigator>
+      </block>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,29 @@
+<!--pages/detail/detail.wxml-->
+<view class='t-detail-logo'>
+  <image src="{{imgUrl}}" class="slide-image"/>
+</view>
+<view class='wrapper-content wrapper-content-brief'>
+  <view class='wrapper-content-introduction'>
+    <view class='wrapper-content-introduction-title'>{{title}}</view>
+    <view class='wrapper-content-introduction-detail'>作者:{{author}}</view>
+    <view class='wrapper-content-introduction-detail'>出版社:{{press}}</view>
+    <view class='wrapper-content-introduction-detail'>出版时间:{{time}}</view>
+  </view>
+  <view class='wrapper-content-score'>
+    <view class='wrapper-content-score-content'>
+      <view class='wrapper-content-score-content-title'>8.8</view>
+      <view class='wrapper-content-score-content-stsr'>
+         <image src="{{star}}" class="slide-image"/>
+      </view>
+    </view>
+  </view>
+  <view class='wrapper-content-str'>
+    <block wx:for="{{tag}}">
+      <view  class='wrapper-content-label'>{{item}}</view>
+    </block>
+  </view>
+</view>
+<view class='wrapper-content'>
+  <view class='wrapper-content-chart'>图文摘要</view>
+  <view class='wrapper-content-chart-content'>{{content}}</view>
+</view>

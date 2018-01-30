@@ -1,0 +1,20 @@
+<!--shu书的list-->
+<template name='items'>
+  <view class='wrapper-content-add'>
+    <block wx:for="{{conent}}" wx:key="{{conent}}">
+      <navigator url="../detail/detail?id={{item.id}}">
+        <view class='wrapper-content-add-conent flex-item'>
+          <view class='wrapper-content-add-conent-item'>
+            <image src="{{item.imgurl}}" class="slide-image"/>
+          </view>
+          <view class='wrapper-content-add-conent-title'>
+            {{item.title}}
+          </view>
+          <!-- ster模板-->
+            <image style='height:30rpx;' src="{{item.star}}" class="slide-image"/>
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+</template>
